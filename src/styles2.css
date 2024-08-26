@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+.main-content{
+    display: block;
+}
+
+.container{
+    background:white;
+    min-width: 100%;
+    padding-top: 70px;
+}
+.section1{
+    min-height: 510px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2{
+    background:#f7f7f7;
+    padding-top: 20px;
+}
+.section2 .banner_Container .bannerImage img{
+    padding-left: 0px!important;
+}
+.section2 .content{
+    padding-right: 45px;
+}
+
+.banner_Container{
+    max-width: 1200px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.banner_Container .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner_Container .content p{
+    color:#333!important;
+    font-size: 16px;
+}
+.banner_Container .content h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 48px;
+}
+.banner_Container .bannerImage img{
+    padding-left: 50px;
+    min-width:650px!important;
+}
+.section2 img{
+    max-width: 590px!important;
+}
+.main_button_link{
+    background:#3a65c9;
+    width:210px;
+    border-radius: 3px;
+    padding:14px 16px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    margin-top: 45px;
+    cursor: pointer;
+}
+.section2 .main_button_link{
+    width:150px;
+    background:#3a65c9;
+}
+.main_button_link:hover{
+    background:#ff5521;
+}
+
+.icon_List{
+    padding-top: 25px;
+    list-style: none;
+}
+.icon_List li{
+    color:#333!important;
+    font-size: 16px;
+}
+.icon_List li{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.icon_List img{
+    width:30px;
+    margin-right: 9px;
+}
+
+/* header related css */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    min-width: 1180px;
+  
+}
+header nav .main_button_link{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    padding-left: 20px;
+    padding-right: 20px;
+    width:auto;
+}
+header nav a{
+    text-decoration: none;
+    margin-left: 35px;
+    
+}
+.header_container{
+    background:#f1f6ff;
+    min-height:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.header_container a {
+    color: #0b3052;
+}
+
+.nav_logo{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Login Page CSS */
+
+.LoginContainer{
+    max-width: 400px;
+    margin:auto;
+    box-shadow: 0px 0px 25px rgba(0,0,0,.1);
+    padding:30px;
+    border-radius: 12px;
+    margin-top: 50px;
+    padding-bottom: 35px;
+    margin-bottom: 50px;
+}
+.LoginContainer h2{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.LoginContainer div{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    width:100%;
+}
+.LoginContainer input{
+    padding:12px;
+    border-radius: 5px;
+    border: 1px solid #d7dfef;
+    
+}
+.LoginContainer label{
+    color: #788291;
+    margin-bottom: 4px;
+}
+.login_btn{
+    background:#6481dd;
+    min-width: 120px;
+    border-radius: 200px;
+    border:none;
+    padding:14px 16px;
+    color:white;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.login_btn:hover{
+    background:#435fbc;
+}
+.LoginContainer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin_google_btn svg{
+    width:21px;
+    padding-right: 9px;
+}
+.signin_google_btn{
+    border:none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px -2px rgba(11,48,82,.25);
+    color: #0b3052;
+    background:white;
+    margin-top: 12px;
+    border-radius: 5px;
+    padding: 7px 20px 7px 20px;
+    height: 43px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.signin_google_btn:hover{
+    box-shadow: 0 4px 10px -2px rgba(11,48,82,.25);
+}

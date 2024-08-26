@@ -1,0 +1,26 @@
+.main-container {
+    background-color: rgb(245, 242, 242); 
+  }
+  
+  @media (min-width: 768px) {
+    .main-container {
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .main-container {
+    }
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    margin-top: 0px
+  }
+  

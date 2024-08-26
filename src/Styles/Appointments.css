@@ -1,0 +1,44 @@
+/* Appointments.css */
+.appointments-container {
+  padding: 20px;
+}
+
+.page-title {
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.appointment-card {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  text-align: center;
+}
+
+.appointment-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ant-list-item-meta-title {
+  font-weight: bold;
+}
+
+.ant-list-item-meta-description {
+  font-style: italic;
+}
+
+.ant-space-vertical {
+  width: 100%;
+  text-align: center;
+}
+@media(max-width: 542px ) {
+  .cancel-p{
+    display: none;
+  }
+}
