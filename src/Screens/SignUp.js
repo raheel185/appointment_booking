@@ -68,7 +68,7 @@ function SignUp() {
     e.preventDefault();
 
     try {
-      const response = await axios.get("http://localhost:8080/api/verify", {
+      const response = await axios.get("http://localhost:80/api/verify", {
         params: { email: input.email, code: verificationCode },
       });
 

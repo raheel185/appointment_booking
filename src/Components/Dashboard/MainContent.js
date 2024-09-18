@@ -19,7 +19,7 @@ const MainContent = () => {
       try {
         // Fetch patient info
         const patientResponse = await axios.get(
-          `http://localhost:8080/api/getPatientInfo/`,
+          `http://localhost:80/api/getPatientInfo/`,
           {
             params: { patient_id: user.id },
           }
@@ -38,7 +38,7 @@ const MainContent = () => {
 
         // Fetch emergency contact info
         const emergencyResponse = await axios.get(
-          `http://localhost:8080/api/getEmergencyContacts/`,
+          `http://localhost:80/api/getEmergencyContacts/`,
           {
             params: { patient_id: user.id },
           }
@@ -67,7 +67,7 @@ const MainContent = () => {
 
       // Update or insert patient info
       const patientResponse = await axios.post(
-        `http://localhost:8080/api/${endpoint}`,
+        `http://localhost:80/api/${endpoint}`,
         {
           patient_id: user.id,
           ...values,
@@ -82,7 +82,7 @@ const MainContent = () => {
 
       // Update or insert emergency contact info
       const emergencyResponse = await axios.post(
-        `http://localhost:8080/api/${endpoint2}`,
+        `http://localhost:80/api/${endpoint2}`,
         {
           patient_id: user.id,
           ...emergencyForm.getFieldsValue(),

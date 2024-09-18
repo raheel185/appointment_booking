@@ -4,7 +4,7 @@ import axios from "axios";
 export const login = createAsyncThunk(
   "auth/login",
   async ({ email, password }) => {
-    const response = await axios.get("http://localhost:8080/api/login", {
+    const response = await axios.get("http://localhost:80/api/login", {
       params: { email, password },
     });
     console.log(response.data);
@@ -17,7 +17,7 @@ export const login = createAsyncThunk(
 );
 
 export const performLogout = createAsyncThunk("auth/logout", async () => {
-  const response = await axios.get("http://localhost:8080/api/logout");
+  const response = await axios.get("http://localhost:80/api/logout");
   if (response.data.status === "success") {
     return;
   } else {

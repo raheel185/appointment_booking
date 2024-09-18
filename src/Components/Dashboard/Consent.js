@@ -26,7 +26,7 @@ const Consent = () => {
     const fetchConsentForm = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/api/getConsentForm?patient_id=${patientId}`,
+          `http://localhost:80/api/getConsentForm?patient_id=${patientId}`,
           { responseType: "blob" }
         );
         if (response.data.type === "application/pdf") {
@@ -79,7 +79,7 @@ const Consent = () => {
       formData.append("patient_id", patientId);
 
       const response = await axios.post(
-        "http://localhost:8080/api/insertConsentForm",
+        "http://localhost:80/api/insertConsentForm",
         formData,
         {
           headers: {
@@ -119,7 +119,7 @@ const Consent = () => {
   const handleDelete = async () => {
     try {
       const response = await axios.delete(
-        `http://localhost:8080/api/deleteConsentForm`,
+        `http://localhost:80/api/deleteConsentForm`,
         {
           params: { patient_id: patientId },
         }

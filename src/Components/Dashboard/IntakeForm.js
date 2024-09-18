@@ -64,7 +64,7 @@ const IntakeForm = () => {
   useEffect(() => {
     if (patientId) {
       axios
-        .get(`http://localhost:8080/api/getPatientIntake/`, {
+        .get(`http://localhost:80/api/getPatientIntake/`, {
           params: { patient_id: patientId },
         })
         .then((response) => {
@@ -99,11 +99,11 @@ const IntakeForm = () => {
   const onFinish = (values) => {
     console.log("Form values on submit:", values);
     const apiCall = !firstTime
-      ? axios.post(`http://localhost:8080/api/updatePatientIntake/`, {
+      ? axios.post(`http://localhost:80/api/updatePatientIntake/`, {
           ...values,
           patient_id: patientId,
         })
-      : axios.post(`http://localhost:8080/api/insertPatientIntake/`, {
+      : axios.post(`http://localhost:80/api/insertPatientIntake/`, {
           ...values,
           patient_id: patientId,
         });

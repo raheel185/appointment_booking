@@ -20,7 +20,7 @@ const Appointments = () => {
     const fetchAppointments = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/api/getAppointment/",
+          "http://localhost:80/api/getAppointment/",
           {
             params: { user_id: user.id },
           }
@@ -66,7 +66,7 @@ const Appointments = () => {
   const handleDelete = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:8080/api/deleteAppointment/`,
+        `http://localhost:80/api/deleteAppointment/`,
         {
           data: { user_id: user.id, id: id },
         }

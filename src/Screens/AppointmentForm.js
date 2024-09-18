@@ -57,7 +57,7 @@ const AppointmentForm = () => {
         const appointmentDateTime = `${formData.appointmentDate} ${formattedTime}`;
 
         const response = await axios.post(
-          "http://localhost:8080/api/createAppointment",
+          "http://localhost:80/api/createAppointment",
           {
             user_id: user.id,
             phone: formData.phone,

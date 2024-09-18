@@ -37,7 +37,7 @@ const InsuranceForm = () => {
     const fetchPatientInfo = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/api/getPatientInfo/`,
+          `http://localhost:80/api/getPatientInfo/`,
           { params: { patient_id: user.id } }
         );
         if (response.data.status === "success") {
@@ -62,7 +62,7 @@ const InsuranceForm = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          "http://localhost:8080/api/getInsuranceInfo/",
+          "http://localhost:80/api/getInsuranceInfo/",
           {
             params: { patient_id: user.id },
           }
@@ -115,7 +115,7 @@ const InsuranceForm = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          "http://localhost:8080/api/getInsuranceInfoS/",
+          "http://localhost:80/api/getInsuranceInfoS/",
           {
             params: { patient_id: user.id },
           }
@@ -289,7 +289,7 @@ const InsuranceForm = () => {
     formData.append("insurance_type", "Primary");
 
     axios
-      .post("http://localhost:8080/api/insertInsuranceInfo", formData, {
+      .post("http://localhost:80/api/insertInsuranceInfo", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -332,7 +332,7 @@ const InsuranceForm = () => {
     formData.append("insurance_type", "Secondary");
 
     axios
-      .post("http://localhost:8080/api/insertInsuranceInfoS", formData, {
+      .post("http://localhost:80/api/insertInsuranceInfoS", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const loginState = async (email, password) => {
   try {
-    const response = await axios.get("http://localhost:8080/api/login", {
+    const response = await axios.get("http://localhost:80/api/login", {
       params: { email, password },
     });
     if (response.data.status === "success") {
