@@ -6,7 +6,14 @@ import "../Styles/Main.css";
 function Main() {
   const location = useLocation();
 
-  const hideTabbarPaths = ["/Login", "/Appointment", "/SignUp", "/ForgetPassword", "/Dashboard" ,"/AppointmentForm"];
+  const hideTabbarPaths = [
+    "/Login",
+    "/Appointment",
+    "/SignUp",
+    "/ForgetPassword",
+    "/Dashboard",
+    "/AppointmentForm",
+  ];
 
   const shouldHideTabbar = hideTabbarPaths.includes(location.pathname);
 

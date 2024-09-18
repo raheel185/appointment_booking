@@ -9,7 +9,7 @@ function Navigation() {
     <Routes>
       <Route path="/" element={<Layout />} />
       <Route index element={<Home />} />
-      <Route path="/Login" element={<Login/>}/>
+      <Route path="/Login" element={<Login />} />
     </Routes>
   );
 }
